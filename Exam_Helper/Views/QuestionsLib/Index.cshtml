@@ -51,9 +51,7 @@
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 @Html.ActionLink("Details", "Details", "QuestionsLib", new { id = item.Id }, new { @class = "dropdown-item" })
-                                <a class="dropdown-item" href="#">Link 1</a>
-                                <a class="dropdown-item" href="#">Link 2</a>
-                                <a class="dropdown-item" href="#">Link 3</a>
+                                @Html.ActionLink("Tests", "RedirectToTest", "QuestionsLib", new { id = item.Id })
                             </div>
                         </div>
                     </td>
