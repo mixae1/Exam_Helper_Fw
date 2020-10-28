@@ -331,6 +331,7 @@
     <Content Include="Views\PacksLib\Create.cshtml" />
     <Content Include="Views\Tests\Index.cshtml" />
     <Content Include="Views\Tests\MissingWordsTest.cshtml" />
+    <Content Include="Views\Home\AjaxTest.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

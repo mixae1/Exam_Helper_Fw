@@ -31,5 +31,12 @@ namespace Exam_Helper.Controllers
         {
             return View();
         }
+
+        [HttpPost]
+        public ActionResult AjaxTest(string name)
+        {
+            //name += "_hehe";
+            return PartialView(name);
+        }
     }
 }
