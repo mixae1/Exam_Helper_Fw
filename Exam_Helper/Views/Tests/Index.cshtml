@@ -1,0 +1,22 @@
+﻿@model Exam_Helper.ViewsModel.TestChoiceViewModel
+
+
+<h1>
+    Choose Test Method:
+</h1>
+
+@using (Html.BeginForm("Index", "Tests"))
+{ 
+    @Html.ValidationSummary(true)
+    for (int i = 0; i < Model.TestMethodsNames.Length; i++)
+    {
+        @Html.RadioButtonFor(model => model.SelectedId, Model.TestsMethodsIds[i])
+        @Html.LabelFor(model => model.TestsMethodsIds, Model.TestMethodsNames[i]);
+        @Html.HiddenFor(model => model.TestsMethodsIds)
+        //validation needs be created
+    }
+
+        <div class="form-group">
+            <input type="submit" value="Make a Choice" class="btn btn-primary" />
+        </div>
+}

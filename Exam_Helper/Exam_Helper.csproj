@@ -228,6 +228,7 @@
     <Compile Include="Models\Tags.cs" />
     <Compile Include="Models\Tests.cs" />
     <Compile Include="Models\User.cs" />
+    <Compile Include="TestMethods\TestMissedWords.cs" />
     <Compile Include="ViewsModel\ClassForQuestionCreatingModel.cs" />
     <Compile Include="ViewsModel\QuestionsListForPackCreatingModel.cs" />
     <Compile Include="ViewsModel\TestChoiceViewModel.cs" />
@@ -328,10 +329,11 @@
     <Content Include="Views\QuestionsLib\Details.cshtml" />
     <Content Include="Views\PacksLib\Index.cshtml" />
     <Content Include="Views\PacksLib\Create.cshtml" />
+    <Content Include="Views\Tests\Index.cshtml" />
+    <Content Include="Views\Tests\MissingWordsTest.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Tests\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
