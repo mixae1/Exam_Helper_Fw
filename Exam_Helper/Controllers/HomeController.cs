@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
 namespace Exam_Helper.Controllers
@@ -32,11 +33,10 @@ namespace Exam_Helper.Controllers
             return View();
         }
 
-        [HttpPost]
-        public ActionResult AjaxTest(string name)
+        public async Task<ActionResult> AjaxTest()
         {
-            //name += "_hehe";
-            return PartialView(name);
+            DbContext db = new DbContext();
+            return PartialView(await db.Tags.ToListAsync());
         }
     }
 }

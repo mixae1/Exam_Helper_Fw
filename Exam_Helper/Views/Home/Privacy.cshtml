@@ -5,10 +5,8 @@
 
 <p>Use this page to detail your site's privacy policy.</p>
 <div>
-    @using (Ajax.BeginForm("AjaxTest", new AjaxOptions { UpdateTargetId = "results" }))
+    @using (Ajax.BeginForm("AjaxTest", new AjaxOptions { InsertionMode = InsertionMode.ReplaceWith, UpdateTargetId = "results" }))
     {
-        <input type="text" name="name" />
-        <input type="submit" value="Launch" />
+        <input type="submit" id="results" value="Launch" />
     }
-    <div id="results"></div>
 </div>
